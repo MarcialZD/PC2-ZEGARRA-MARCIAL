@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasboard Profesor</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+
+<body>
+    <section>
+        <nav>
+            <div class="nav-wrapper blue">
+                <a href="#!" class="brand-logo"><img src="images/pngwing.com.png" id="logo" alt=""></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" id="cerrarSesion">Salida</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="sass.html">Perfil</a></li>
+            <li><a href="badges.html">Carrito</a></li>
+            <li><a href="#" id="cerrarSesionToggle">Salida</a></li>
+        </ul>
+
+        <h3>Dashboard Profesor</h3>
+
+        <h3>Mis Cursos</h3>
+        <p>Presione en el curso para su descripción</p>
+        <ul id="lista-cursos">
+        </ul>
+
+        <div id="descripcion-curso" style="display: none;">
+        </div>
+
+
+    </section>
+
+
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/jquery.js"></script>
+<script src="js/js.js"></script>
+<script src="js/dashboard_profesor.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems, options);
+    });
+
+    // Or with jQuery
+
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+    });
+</script>
+
+</html>

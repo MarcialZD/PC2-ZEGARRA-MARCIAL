@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Alumno</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="nav-wrapper blue">
+                <a href="#!" class="brand-logo"><img src="images/pngwing.com.png" id="logo" alt=""></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#" id="cerrarSesion">Salida</a></li>
+                </ul>
+            </div>
+        </nav>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#" id="cerrarSesionToggle">Salida</a></li>
+        </ul>
+
+        <h3>Dashboard Alumno</h3>
+    <center>
+        <h2>Mi Perfil</h2>
+
+    </center>
+        <div id="perfil">
+        </div>
+          
+        <h4>Encuesta</h4>
+        <p>¿Quién es tu profesor favorito?</p>
+        <p>
+            <label>
+                <input class="with-gap" name="profesorFavorito" type="radio" value="profesor1"/>
+                <span>Profesor 1</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input class="with-gap" name="profesorFavorito" type="radio" value="profesor2"/>
+                <span>Profesor 2</span>
+            </label>
+        </p>
+
+        <p>¿Te gusta la asignatura?</p>
+        <p>
+            <label>
+                <input type="checkbox" class="filled-in" name="asignaturaGusta" value="si"/>
+                <span>Sí</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" class="filled-in" name="asignaturaGusta" value="no"/>
+                <span>No</span>
+            </label>
+        </p>
+
+        <p>¿Cómo calificarías la claridad del profesor?</p>
+        <p>
+            <label>
+                <input type="checkbox" class="filled-in" name="claridadProfesor" value="excelente"/>
+                <span>Excelente</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" class="filled-in" name="claridadProfesor" value="bien"/>
+                <span>Bien</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" class="filled-in" name="claridadProfesor" value="regular"/>
+                <span>Regular</span>
+            </label>
+        </p>
+        <p>
+            <label>
+                <input type="checkbox" class="filled-in" name="claridadProfesor" value="malo"/>
+                <span>Malo</span>
+            </label>
+        </p>
+
+        <button class="waves-effect waves-light btn" id="enviarEncuesta">Enviar</button>
+    </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/jquery.js"></script>
+<script src="js/js.js"></script>
+<script src="js/dashboard_alumno.js"></script>
+</html>
